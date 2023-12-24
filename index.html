@@ -1079,11 +1079,9 @@
         <h1>Merry Christmas!</h1>
         <h2>Giáng sinh vui vẻ nha ^_^ 🎅🎄🎁</h2>
     </div>
-    <div class="HinhHuong1">
-        <img src="img/H1.png" alt="">
+    <div class="">
     </div>
-    <div class="HinhHuong2">
-        <img src="img/H2.png" alt="">
+    <div class="">
     </div>
     <div class="window ">
         <div class="santa">
@@ -1107,12 +1105,28 @@
     </div>
 
    </div>
+   <div>
+    <audio id="myAudio">
+        <source src="radio/FELIZ NAVIDAD 越南鼓 (Vux LH Remix Tiktok 2023) __ Nhạc Giáng Sinh Merry Christmas Hot Tiktok DJ抖音版.mp4" type="audio/mpeg">
+    </audio>
+    
+   </div>
    <script>
         document.querySelector("#btn").onclick = function (){
             document.querySelector("#btn").style.display='none';
             document.querySelector(".christmas").style.display='block';
             document.querySelector("#body").style.background="#de2f32";
         }
+
+        document.getElementById('btn').addEventListener('click', function() {
+    var audio = document.getElementById('myAudio');
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.currentTime = 0
+    }
+});
+
    </script>
 </body>
 
